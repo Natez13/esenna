@@ -1,13 +1,25 @@
-import React, { useState, useEffect } from "react";
+
 import {BrowserRouter as Router,  Route, Link} from 'react-router-dom';
-import {Navs} from "./Components/Layout/Navbar/Navs";
+import { Home } from './Componets/Home';
+import { User } from './Componets/User';
+
+
 
 function App() {
-  
-
   return (
     <div>
-      <Navs/>
+      <Router>
+        <Route exact path="/user" component={User}/>
+        <Route exact path="/" render={() => {
+          return(
+            <div>
+              <Home></Home>
+            </div>
+          )
+        }}/>
+      </Router>
+      
+      
     </div>
   );
 }
