@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {BrowserRouter as Router,  Route, Link} from 'react-router-dom';
+//import {BrowserRouter as Router,  Route, Link} from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 
 const LogoutButton = () => {
@@ -10,6 +10,6 @@ const LogoutButton = () => {
       Log Out
     </button>
   );
-};
+}; 
 
 export default LogoutButton;
