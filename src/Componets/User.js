@@ -47,7 +47,7 @@ export const User = () => {
         <h3>User Metadata</h3>
         {userMetadata ? (
           <pre>
-            <table className="table container">
+            <table className="table container table-striped">
               
               <thead className="thead-dark">
                 <tr>
